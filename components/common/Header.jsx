@@ -1,9 +1,9 @@
 import Link from 'next/link';
-import { BiUserCircle } from 'react-icons/bi';
-import { MdShoppingCart } from 'react-icons/md';
-import NavBar from './NavBar';
+import { useSession, signOut } from 'next-auth/react';
+import Image from 'next/image';
 
 export function Header() {
+  const { data: session } = useSession();
   return (
     <>
       <header className="bg-transparent">
@@ -30,14 +30,30 @@ export function Header() {
               </div>
             </div>
           </div>
-          <div className="flex">
-            <p className="px-2 border-r-2">Login</p>
-            <p className="px-2">Register</p>
-          </div>
+          {session?.user ? (
+            <div className="flex items-center">
+              <Image
+                src={session?.user?.image}
+                alt="avatar"
+                width={30}
+                height={30}
+                className="rounded-full"
+              />
+              <Link href="/">
+                <p className="px-2 border-r-2">{session?.user?.name}</p>
+              </Link>
 
-          {/* <div>
-            <BiUserCircle />
-          </div> */}
+              <p onClick={() => signOut()} className="px-2 cursor-pointer">
+                LognOut
+              </p>
+            </div>
+          ) : (
+            <div className="flex">
+              <Link href="/login">
+                <p className="px-2 cursor-pointer">Login</p>
+              </Link>
+            </div>
+          )}
         </div>
       </header>
     </>

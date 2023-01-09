@@ -79,7 +79,7 @@ function Home({ time }) {
             <h1 className="text-center font-bold text-3xl">
               Bắt đầu thử thách với thi trắc nghiệm
             </h1>
-            <p className="text-center">
+            <p className="text-center ">
               Ngân hàng đề thi trắc nghiệm đa dạng, dành riêng cho cộng đồng lập
               trình từ cơ bản đến nâng cao. Cùng Kquiz: "Luyện tập, thử thách,
               không ngại khó!"
@@ -119,7 +119,7 @@ function Home({ time }) {
           <h1 className="text-center font-bold text-3xl">
             Bắt đầu thử thách với thi trắc nghiệm
           </h1>
-          <p className="text-center">
+          <p className="text-center mb-10">
             Ngân hàng đề thi trắc nghiệm đa dạng, dành riêng cho cộng đồng lập
             trình từ cơ bản đến nâng cao. Cùng Kquiz: "Luyện tập, thử thách,
             không ngại khó!"
@@ -132,7 +132,7 @@ function Home({ time }) {
       {/* Contest by concept */}
 
       <div className="mt-28">
-        <h1 className="text-center font-bold text-3xl">
+        <h1 className="text-center font-bold text-3xl mb-10">
           Trắc nghiệm theo chủ đề
         </h1>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
@@ -144,7 +144,7 @@ function Home({ time }) {
       {/* Popular Contest */}
 
       <div className="mt-28">
-        <h1 className="text-center font-bold text-3xl">Đề thi nổi bật</h1>
+        <h1 className="text-center font-bold text-3xl mb-10">Đề thi nổi bật</h1>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
           {contestList.map((contest, index) => (
             <RecommendContest key={index} contest={contest} />
@@ -154,7 +154,7 @@ function Home({ time }) {
       {/* Blog recommendation */}
 
       <div className="mt-28 flex flex-col">
-        <h1 className="text-center font-bold text-3xl">
+        <h1 className="text-center font-bold text-3xl mb-10">
           Bài viết đáng quan tâm
         </h1>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
@@ -169,7 +169,7 @@ function Home({ time }) {
       {/* Attractive User */}
 
       <div className="mt-28 flex flex-col">
-        <h1 className="text-center font-bold text-3xl">
+        <h1 className="text-center font-bold text-3xl mb-10">
           Bài viết đáng quan tâm
         </h1>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">

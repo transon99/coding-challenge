@@ -133,7 +133,7 @@ export const Footer = () => {
           </a>
         </div>
         <div>
-          <form action>
+          <form>
             <div className="grid md:grid-cols-3 gird-cols-1 gap-4 flex justify-center items-center">
               <div className="md:ml-auto md:mb-6">
                 <p className>
