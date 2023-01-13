@@ -97,19 +97,23 @@ function Home({ time }) {
             alt="learn-code"
             className="w-60 h-72 rounded-lg object-cover"
           />
-          <form action="" method="get" className=" h-[46px]  w-[60%] relative">
-            <input
-              type="text"
-              name=""
-              id="search"
-              autocomplete="off"
-              placeholder="Nhập vào sản phẩm cần tìm..."
-              className="border-[#d9d9d9] border-solid rounded-[20px] border-[1px] w-full h-full pl-5"
-            />
-            <button className="absolute top-0 right-0 w-[15%] h-[46px] rounded-[20px] bg-btn-color flex justify-center items-center">
-              <FaSearch />
-            </button>
-          </form>
+          <div className="h-[56px]  w-[70%] relative">
+            <form action="" method="get" className="w-full h-full ">
+              <input
+                type="text"
+                name=""
+                id="search"
+                autoComplete="off"
+                placeholder="Nhập vào từ khóa cần tìm..."
+                className="border-[#d9d9d9] border-solid rounded-md border-[1px] w-full h-full pl-5 py-1"
+              />
+              <div className="">
+                <button className="absolute top-0 right-0 w-[15%] h-full rounded-md bg-btn-color flex justify-center items-center">
+                  <FaSearch />
+                </button>
+              </div>
+            </form>
+          </div>
         </div>
       </div>
 

@@ -6,15 +6,15 @@ export function Header() {
   const { data: session } = useSession();
   return (
     <>
-      <header className="bg-transparent">
-        <div className="h-[70px] p-3 flex justify-between items-center container">
+      <header className="fixed w-full bg-primary-color z-10">
+        <div className="h-[70px] py-3 flex justify-between items-center container">
           <div className="flex ">
             <Link href="/" passHref>
               <p className="text-2xl font-bold text-white">CODING WEB</p>
             </Link>
             <div className=" ml-6 hidden lg:block">
               <div className="flex">
-                <Link href="/" passHref>
+                <Link href="/list-contest" passHref>
                   <p className="text-xl text-white mx-3">Đề thi</p>
                 </Link>
 
