@@ -19,8 +19,8 @@ export const Filter = () => {
   ];
 
   return (
-    <div className="absolute top-0 left-0 h-screen">
-      <div className="bg-white h-full px-5 scrollbar-thin scrollbar-thumb-primary scrollbar-track-white fixed overflow-y-scroll pt-[70px] ">
+    
+      <div className="bg-white h-full px-5 overflow-y-scroll">
       <div className="mb-4">
         <label className="text-secondary-text">Tìm kiếm bằng từ khóa</label>
         <div className="mt-2">
@@ -66,6 +66,5 @@ export const Filter = () => {
         Tìm kiếm ngay
       </button>
       </div>
-    </div>
   );
 };

@@ -1,4 +1,5 @@
 import Image from 'next/image';
+import Link from 'next/link';
 import React from 'react';
 
 export function BlogRecommendation({ blog }) {
@@ -12,8 +13,11 @@ export function BlogRecommendation({ blog }) {
           height="48"
           className="w-full h-full "
         />
-        <div className="p-4">
+        <div className="relative px-4 pb-4 pt-8 cursor-pointer hover:bottom-14 transition duration-300 ease-out hover:ease-in bg-white">
           <div className="h-40">
+            <div className="left-5 -top-7 text-4xl text-white font-bold flex items-center justify-center absolute bg-cover bg-center h-14 w-14 rounded-full shadow bg-orange-500">
+              <span class="inline-block m-0 p-0"> v</span>
+            </div>
             <h2 className="text-secondary-text font-bold my-2">{blog.title}</h2>
             <p className="text-secondary-text line-clamp-3">{blog.des}</p>
             <div className="flex "></div>
@@ -52,6 +56,14 @@ export function BlogRecommendation({ blog }) {
               </span>
               <p className="text-secondary-text">{blog.comment} Bình luận</p>
             </div>
+          </div>
+          <div className="absolute top-full left-0 w-full bg-[#FFFAF1] h-14 flex items-center justify-center">
+            <Link
+              href="/"
+              className="flex text-btn-color hover:text-[#E38C00] transition-all text-sm items-center"
+            >
+              <span>Xem thêm</span>
+            </Link>
           </div>
         </div>
       </div>

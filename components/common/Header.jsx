@@ -18,13 +18,13 @@ export function Header() {
                   <p className="text-xl text-white mx-3">Đề thi</p>
                 </Link>
 
-                <Link href="/" passHref>
+                <Link href="/exam-result" passHref>
                   <p className="text-xl text-white mx-3">Kết quả thi</p>
                 </Link>
-                <Link href="/" passHref>
+                <Link href="/blogs-list" passHref>
                   <p className="text-xl text-white mx-3">Blogs</p>
                 </Link>
-                <Link href="/" passHref>
+                <Link href="/rank " passHref>
                   <p className="text-xl text-white mx-3">Xếp hạng</p>
                 </Link>
               </div>
